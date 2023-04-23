@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Meu Site</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <header>
+    <img src="foto.png"> 
+  <h1>VINICIUS ROSENDO</h1>
+</head>
+<body>
+  <ul>
+    <li class="active" onclick="mostrarTab(0)">Resumo</li>
+    <li onclick="mostrarTab(1)">Contatos</li>
+    <li onclick="mostrarTab(2)">Curriculo</li>
+  </ul>
+  <div class="tab-content">Eu sou um programador júnior apaixonado por tecnologia e inovação. Desde criança, sempre tive interesse em computadores e comecei a aprender a programar por conta própria. Com o tempo, descobri minha paixão por desenvolvimento de software e decidi seguir essa carreira. Atualmente, estou em busca de oportunidades para me desenvolver e crescer profissionalmente, sempre buscando aprender novas tecnologias e aprimorar minhas habilidades. Fora do trabalho, gosto de passar meu tempo livre praticando esportes, assistindo a filmes e séries e jogando videogame.</div>
+ 
+  <div class="tab-content"> <a href="mailto:vinyrosendo@gmail.com">
+    <img src="gmail.jpeg" alt="Minha imagem">
+  </a>
+  <a href="https://www.linkedin.com/in/Viny Rosendo/">
+    <img src="linkedin.jpeg" alt="Minha imagem">
+  </a>
+      <a href="tel:+5511970901389">
+        <img src="telefone.jpeg" alt="Minha imagem">
+  </a>
+</div> 
+  <div class="tab-content">
+    <a href="Curriculo.jpeg" download>Download do arquivo JPG</a>
+    <br>
+    <a href="Canva.pdf" download>Download do arquivo PDF</a>
+</div>
+  <script>
+    // Função para alternar entre as guias
+    function mostrarTab(n) {
+      var tabs = document.getElementsByClassName("tab-content");
+      var guias = document.getElementsByTagName("li");
+      for (var i = 0; i < tabs.length; i++) {
+        tabs[i].style.display = "none";
+      }
+      for (var i = 0; i < guias.length; i++) {
+        guias[i].classList.remove("active");
+      }
+      tabs[n].style.display = "block";
+      guias[n].classList.add("active");
+    }
+  </script>
+  </header>
+</body>
+</html>
