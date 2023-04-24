@@ -1,11 +1,15 @@
 header{
 	background-color: black;
+    justify-content:space-around;
 }
 h1{
+	
 	align-content: center;
 	margin-left:500px;
 	font-family: sans-serif;
-	  color: white;
+	color: white;
+	
+
 }
 body{
 background-image: url(fundo.jpeg);
@@ -23,6 +27,7 @@ img{
       list-style: none;
       margin: 0;
       padding: 0;
+      margin-right: 50px;
     }
     ul li {
       display: inline-block;
@@ -31,10 +36,14 @@ img{
       background-color: #ddd;
       border-radius: 5px 5px 0 0;
       cursor: pointer;
+      font-size: 40px;
+      margin-right: 100px;
     }
     ul li.active {
       background-color: #fff;
        align-content: center;
+       margin-right:100px;
+       margin-top: 10px;
 }
     /* Estilo do conteúdo das guias */
     .tab-content {
@@ -50,3 +59,11 @@ img{
       display: none;
        align-content: center;
     }
+@media screen and (max-width: 768px){
+	header{
+		height: :100%;
+		flex-direction: column;
+	}
+}
+                    
+                    
