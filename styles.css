@@ -27,22 +27,33 @@ header h1 {
 }
 
 /* Estilo da lista de guias */
-/* Estilo da lista de guias */
+h1 {
+  margin-top: 10px;
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color:white;
+  text-shadow: black;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  border: 10px;
 }
 
 li {
   float: left;
   margin-right: 10px;
+  margin: 10;
+  padding: 10;
 }
 
 li a {
-  li a {
   display: block;
   color: white;
   text-align: center;
@@ -57,21 +68,24 @@ li a {
 li.active a {
   background-color: #0077CC;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  
 }
 
 li a:hover {
   background-color: #3e8e41;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  border: 10px;
 }
 
 li.active {
-  background-color: #4CAF50;
+  background-color: darkblue;
+  border: 10px;
 }
 
 /* Estilo do conteúdo da guia */
 .tab-content {
   display: none;
-  padding: 20px;
+  padding: 30px;
   background-color: black;
   border: 1px solid #ccc;
   border-top: none;
@@ -95,7 +109,7 @@ li.active {
 .tab-content a {
   display: inline-block;
   margin: 10px;
-  background-color: #4CAF50;
+  background-color:darkblue;
   color: #fff;
   padding: 10px;
   text-decoration: none;
@@ -107,4 +121,11 @@ li.active {
 .tab-content a:hover {
   background-color: #3e8e41;
   transform: scale(1.1);
+}
+.tab-content img {
+  margin-right: 20px;
+}
+
+li {
+  margin-right: 20px;
 }
